@@ -173,13 +173,25 @@ const PitchDeck = () => {
                 <p className="text-sm text-gray-600">API e integrações</p>
               </div>
             </div>
-            <div className="bg-white p-5 rounded-lg shadow-md text-base space-y-2">
-              <p className="font-bold mb-2 text-base">Métricas AARRR</p>
-              <p className="text-sm"><strong>Aquisição:</strong> Marketing + SEO</p>
-              <p className="text-sm"><strong>Ativação:</strong> 1ª análise grátis</p>
-              <p className="text-sm"><strong>Receita:</strong> Conversão para pago</p>
-              <p className="text-sm"><strong>Retenção:</strong> Valor contínuo</p>
-              <p className="text-sm"><strong>Referral:</strong> Comunidades</p>
+            <div className="bg-gradient-to-br from-indigo-50 to-purple-50 p-5 rounded-lg shadow-md border border-indigo-200">
+              <p className="font-bold mb-3 text-lg text-indigo-900">Métricas AARRR</p>
+              <div className="space-y-2.5">
+                <div className="bg-white p-2.5 rounded-md">
+                  <p className="text-sm"><strong className="text-indigo-600">Aquisição:</strong> Marketing de conteúdo, SEO, comunidades tech</p>
+                </div>
+                <div className="bg-white p-2.5 rounded-md">
+                  <p className="text-sm"><strong className="text-purple-600">Ativação:</strong> 1ª análise gratuita</p>
+                </div>
+                <div className="bg-white p-2.5 rounded-md">
+                  <p className="text-sm"><strong className="text-pink-600">Receita:</strong> Taxa de conversão (freemium → pago)</p>
+                </div>
+                <div className="bg-white p-2.5 rounded-md">
+                  <p className="text-sm"><strong className="text-blue-600">Retenção:</strong> Análises mensais + alertas automáticos</p>
+                </div>
+                <div className="bg-white p-2.5 rounded-md">
+                  <p className="text-sm"><strong className="text-green-600">Referral:</strong> Programa de indicação</p>
+                </div>
+              </div>
             </div>
           </div>
         </div>
@@ -229,7 +241,6 @@ const PitchDeck = () => {
             </div>
           </div>
           <div className="bg-indigo-600 text-white p-10 rounded-xl shadow-xl">
-            <h3 className="text-3xl font-bold mb-6 text-center">Investimento: R$ 300.000</h3>
             <div className="grid grid-cols-3 gap-6 text-center">
               <div><p className="text-4xl font-bold">R$ 300k</p><p className="text-base mt-2">Total</p></div>
               <div><p className="text-4xl font-bold">12 meses</p><p className="text-base mt-2">Runway</p></div>
@@ -334,7 +345,8 @@ const PitchDeck = () => {
           </div>
           <div className="bg-indigo-600 text-white p-6 rounded-2xl shadow-2xl">
             <p className="text-2xl font-bold text-center">R$ 300.000</p>
-            <p className="text-center text-base mt-2">12 meses · v1.0</p>
+            <p className="text-center text-base mt-2">12 meses · v1.0 · <span className="text-green-300 font-bold">150% ROI</span></p>
+            <p className="text-center text-sm mt-1 text-indigo-200">Retorno projetado: R$ 450.000</p>
           </div>
           <a href="https://privacyveil.com.br" className="text-indigo-600 font-medium text-base">privacyveil.com.br</a>
         </div>
@@ -429,7 +441,7 @@ const PitchDeck = () => {
         <button
           onClick={prevSlide}
           disabled={currentSlide === 0}
-          className="flex items-center space-x-2 px-7 py-3 rounded-xl bg-indigo-600 text-white hover:bg-indigo-700 disabled:bg-gray-300 disabled:cursor-not-allowed transition text-base font-medium"
+          className="cursor-pointer flex items-center space-x-2 px-7 py-3 rounded-xl bg-indigo-600 text-white hover:bg-indigo-700 disabled:bg-gray-300 disabled:cursor-not-allowed transition text-base font-medium"
         >
           <ChevronLeft className="w-5 h-5" />
           <span>Anterior</span>
@@ -440,7 +452,7 @@ const PitchDeck = () => {
             <button
               key={index}
               onClick={() => setCurrentSlide(index)}
-              className={`transition-all rounded-full ${
+              className={`cursor-pointer transition-all rounded-full ${
                 index === currentSlide ? 'w-8 h-3 bg-indigo-600' : 'w-3 h-3 bg-gray-300'
               }`}
             />
@@ -450,7 +462,7 @@ const PitchDeck = () => {
         <button
           onClick={nextSlide}
           disabled={currentSlide === slides.length - 1}
-          className="flex items-center space-x-2 px-7 py-3 rounded-xl bg-indigo-600 text-white hover:bg-indigo-700 disabled:bg-gray-300 disabled:cursor-not-allowed transition text-base font-medium"
+          className="cursor-pointer flex items-center space-x-2 px-7 py-3 rounded-xl bg-indigo-600 text-white hover:bg-indigo-700 disabled:bg-gray-300 disabled:cursor-not-allowed transition text-base font-medium"
         >
           <span>Próximo</span>
           <ChevronRight className="w-5 h-5" />
