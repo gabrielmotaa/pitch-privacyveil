@@ -336,7 +336,7 @@ const PitchDeck = () => {
             <p className="text-2xl font-bold text-center">R$ 300.000</p>
             <p className="text-center text-base mt-2">12 meses · v1.0</p>
           </div>
-          <a href="https://privacyveil.gabrielmota.dev" className="text-indigo-600 font-medium text-base">privacyveil.gabrielmota.dev</a>
+          <a href="https://privacyveil.com.br" className="text-indigo-600 font-medium text-base">privacyveil.com.br</a>
         </div>
       )
     },
