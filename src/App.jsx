@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { ChevronLeft, ChevronRight, Shield, Target, TrendingUp, DollarSign, Calendar, Award, Eye, Zap, CheckCircle } from 'lucide-react';
+import { ChevronLeft, ChevronRight, Shield, Target, TrendingUp, DollarSign, Calendar, Award, CodeXml, Zap, CheckCircle } from 'lucide-react';
 // import css
 import './App.css';
 import logo from './assets/logo.svg';
@@ -50,9 +50,9 @@ const PitchDeck = () => {
           </div>
           <div className="grid grid-cols-3 gap-6">
             <div className="bg-white p-8 rounded-xl shadow-lg">
-              <Eye className="w-14 h-14 text-indigo-600 mb-6" />
-              <h3 className="font-bold text-xl mb-3">Detecção de Dark Patterns</h3>
-              <p className="text-base text-gray-600 leading-relaxed">Identificação automática de elementos enganosos</p>
+              <CodeXml className="w-14 h-14 text-indigo-600 mb-6" />
+              <h3 className="font-bold text-xl mb-3">Crawler Especializado</h3>
+              <p className="text-base text-gray-600 leading-relaxed">Análise completa das páginas do seu site</p>
             </div>
             <div className="bg-white p-8 rounded-xl shadow-lg">
               <Zap className="w-14 h-14 text-purple-600 mb-6" />
