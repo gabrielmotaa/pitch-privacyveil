@@ -139,7 +139,7 @@ const PitchDeck = () => {
               </div>
               <div className="bg-white p-3 rounded shadow">
                 <p className="font-semibold text-blue-600 mb-1 text-sm">✓ Automatização</p>
-                <p className="text-xs text-gray-600">Detecção e correção automática de problemas</p>
+                <p className="text-xs text-gray-600">Detecção automática e contínua de problemas</p>
               </div>
             </div>
           </div>
