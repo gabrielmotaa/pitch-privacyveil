@@ -12,9 +12,9 @@ const PitchDeck = () => {
       title: "",
       content: (
         <div className="flex flex-col items-center justify-center h-full space-y-12">
-          <img src={logo} alt="PrivacyVeil Logo" className="w-40 h-40" />
-          <h1 className="text-8xl font-bold text-indigo-600">PrivacyVeil</h1>
-          <p className="text-3xl text-gray-700 text-center max-w-4xl">Auditoria automatizada de interfaces de privacidade</p>
+          <img src={logo} alt="PrivacyVeil Logo" className="w-40 h-40 animate-scaleIn" />
+          <h1 className="text-8xl font-bold text-indigo-600 animate-fadeIn delay-200">PrivacyVeil</h1>
+          <p className="text-3xl text-gray-700 text-center max-w-4xl animate-fadeIn delay-300">Auditoria automatizada de interfaces de privacidade</p>
         </div>
       )
     },
@@ -23,20 +23,20 @@ const PitchDeck = () => {
       icon: <Target className="w-8 h-8 text-indigo-600" />,
       content: (
         <div className="space-y-8">
-          <div className="bg-red-50 border-l-4 border-red-500 p-8 rounded-lg">
+          <div className="bg-red-50 border-l-4 border-red-500 p-8 rounded-lg animate-fadeIn">
             <p className="text-2xl font-semibold text-gray-800">Empresas perdem usuários por negligenciar a privacidade na UX</p>
           </div>
           <div className="grid grid-cols-2 gap-8">
-            <div className="bg-white p-8 rounded-xl shadow-lg">
+            <div className="bg-white p-8 rounded-xl shadow-lg animate-fadeIn delay-200">
               <p className="text-6xl font-bold text-indigo-600 mb-4">2 em 3</p>
               <p className="text-lg text-gray-700 leading-relaxed">usuários se preocupam com dados em compras online¹</p>
             </div>
-            <div className="bg-white p-8 rounded-xl shadow-lg">
+            <div className="bg-white p-8 rounded-xl shadow-lg animate-fadeIn delay-400">
               <p className="text-6xl font-bold text-red-600 mb-4">⚠️</p>
               <p className="text-lg text-gray-700 leading-relaxed">Usuários abandonam apps por medo do uso de dados¹</p>
             </div>
           </div>
-          <p className="text-base text-gray-500 mt-6">¹ NIC.br, 2023</p>
+          <p className="text-base text-gray-500 mt-6 animate-fadeIn delay-600">¹ NIC.br, 2023</p>
         </div>
       )
     },
@@ -45,21 +45,21 @@ const PitchDeck = () => {
       icon: <Shield className="w-8 h-8 text-indigo-600" />,
       content: (
         <div className="space-y-8">
-          <div className="bg-indigo-50 border-l-4 border-indigo-600 p-8 rounded-lg">
+          <div className="bg-indigo-50 border-l-4 border-indigo-600 p-8 rounded-lg animate-fadeIn">
             <p className="text-2xl font-semibold text-gray-800">Auditoria de interfaces de privacidade em minutos</p>
           </div>
           <div className="grid grid-cols-3 gap-6">
-            <div className="bg-white p-8 rounded-xl shadow-lg">
+            <div className="bg-white p-8 rounded-xl shadow-lg animate-fadeIn delay-200">
               <CodeXml className="w-14 h-14 text-indigo-600 mb-6" />
               <h3 className="font-bold text-xl mb-3">Crawler Especializado</h3>
               <p className="text-base text-gray-600 leading-relaxed">Análise completa das páginas do seu site</p>
             </div>
-            <div className="bg-white p-8 rounded-xl shadow-lg">
+            <div className="bg-white p-8 rounded-xl shadow-lg animate-fadeIn delay-400">
               <Zap className="w-14 h-14 text-purple-600 mb-6" />
               <h3 className="font-bold text-xl mb-3">Insights Instantâneos</h3>
               <p className="text-base text-gray-600 leading-relaxed">Análise completa com IA proprietária</p>
             </div>
-            <div className="bg-white p-8 rounded-xl shadow-lg">
+            <div className="bg-white p-8 rounded-xl shadow-lg animate-fadeIn delay-600">
               <CheckCircle className="w-14 h-14 text-pink-600 mb-6" />
               <h3 className="font-bold text-xl mb-3">Sugestões Acionáveis</h3>
               <p className="text-base text-gray-600 leading-relaxed">Relatórios práticos baseados em pesquisas</p>
@@ -120,7 +120,7 @@ const PitchDeck = () => {
               <tr className="border-b">
                 <td className="p-4 text-sm">OneTrust</td>
                 <td className="p-4 text-sm">Conformidade Legal</td>
-                <td className="p-4 text-sm">Dashboards</td>
+                <td className="p-4 text-sm">Dashboards de compliance</td>
               </tr>
               <tr>
                 <td className="p-4 text-sm">Hotjar</td>
@@ -327,28 +327,28 @@ const PitchDeck = () => {
       title: "",
       content: (
         <div className="flex flex-col items-center justify-center h-full space-y-8">
-          <img src={logo} alt="PrivacyVeil Logo" className="w-16 h-16" />
-          <h2 className="text-4xl font-bold text-center text-indigo-600 max-w-4xl leading-tight">Transforme privacidade em vantagem competitiva</h2>
+          <img src={logo} alt="PrivacyVeil Logo" className="w-16 h-16 animate-scaleIn" />
+          <h2 className="text-4xl font-bold text-center text-indigo-600 max-w-4xl leading-tight animate-fadeIn delay-100">Transforme privacidade em vantagem competitiva</h2>
           <div className="grid grid-cols-3 gap-5 w-full max-w-4xl">
-            <div className="bg-white p-5 rounded-xl shadow-lg text-center">
+            <div className="bg-white p-5 rounded-xl shadow-lg text-center animate-fadeIn delay-300">
               <p className="text-3xl font-bold text-indigo-600 mb-2">18.000</p>
               <p className="text-sm text-gray-700">Startups no mercado</p>
             </div>
-            <div className="bg-white p-5 rounded-xl shadow-lg text-center">
+            <div className="bg-white p-5 rounded-xl shadow-lg text-center animate-fadeIn delay-500">
               <p className="text-3xl font-bold text-green-600 mb-2">66%</p>
               <p className="text-sm text-gray-700">Empresas em transformação digital</p>
             </div>
-            <div className="bg-white p-5 rounded-xl shadow-lg text-center">
+            <div className="bg-white p-5 rounded-xl shadow-lg text-center animate-fadeIn delay-700">
               <p className="text-3xl font-bold text-purple-600 mb-2">2/3</p>
               <p className="text-sm text-gray-700">Usuários preocupados com privacidade</p>
             </div>
           </div>
-          <div className="bg-indigo-600 text-white p-6 rounded-2xl shadow-2xl">
+          <div className="bg-indigo-600 text-white p-6 rounded-2xl shadow-2xl animate-scaleIn delay-800">
             <p className="text-2xl font-bold text-center">R$ 300.000</p>
             <p className="text-center text-base mt-2">12 meses · v1.0 · <span className="text-green-300 font-bold">150% ROI</span></p>
             <p className="text-center text-sm mt-1 text-indigo-200">Retorno projetado: R$ 450.000</p>
           </div>
-          <a href="https://privacyveil.com.br" className="text-indigo-600 font-medium text-base">privacyveil.com.br</a>
+          <a href="https://privacyveil.com.br" className="text-indigo-600 font-medium text-base animate-fadeIn delay-800">privacyveil.com.br</a>
         </div>
       )
     },
@@ -428,12 +428,12 @@ const PitchDeck = () => {
       <div className="flex-1 p-8 overflow-auto">
         <div className="max-w-6xl mx-auto bg-white rounded-2xl shadow-2xl p-10 h-full">
           {currentSlideData.title && (
-            <div className="flex items-center space-x-4 mb-6 pb-5 border-b-2 border-indigo-200">
+            <div className="flex items-center space-x-4 mb-6 pb-5 border-b-2 border-indigo-200 animate-slideInLeft">
               {currentSlideData.icon}
               <h2 className="text-4xl font-bold text-gray-800">{currentSlideData.title}</h2>
             </div>
           )}
-          <div className="mt-4">{currentSlideData.content}</div>
+          <div className="mt-4" key={currentSlide}>{currentSlideData.content}</div>
         </div>
       </div>
 
@@ -441,7 +441,7 @@ const PitchDeck = () => {
         <button
           onClick={prevSlide}
           disabled={currentSlide === 0}
-          className="cursor-pointer flex items-center space-x-2 px-7 py-3 rounded-xl bg-indigo-600 text-white hover:bg-indigo-700 disabled:bg-gray-300 disabled:cursor-not-allowed transition text-base font-medium"
+          className="flex items-center space-x-2 px-7 py-3 rounded-xl bg-indigo-600 text-white hover:bg-indigo-700 disabled:bg-gray-300 disabled:cursor-not-allowed transition-colors text-base font-medium"
         >
           <ChevronLeft className="w-5 h-5" />
           <span>Anterior</span>
@@ -452,7 +452,7 @@ const PitchDeck = () => {
             <button
               key={index}
               onClick={() => setCurrentSlide(index)}
-              className={`cursor-pointer transition-all rounded-full ${
+              className={`transition-all duration-300 rounded-full ${
                 index === currentSlide ? 'w-8 h-3 bg-indigo-600' : 'w-3 h-3 bg-gray-300'
               }`}
             />
@@ -462,7 +462,7 @@ const PitchDeck = () => {
         <button
           onClick={nextSlide}
           disabled={currentSlide === slides.length - 1}
-          className="cursor-pointer flex items-center space-x-2 px-7 py-3 rounded-xl bg-indigo-600 text-white hover:bg-indigo-700 disabled:bg-gray-300 disabled:cursor-not-allowed transition text-base font-medium"
+          className="flex items-center space-x-2 px-7 py-3 rounded-xl bg-indigo-600 text-white hover:bg-indigo-700 disabled:bg-gray-300 disabled:cursor-not-allowed transition-colors text-base font-medium"
         >
           <span>Próximo</span>
           <ChevronRight className="w-5 h-5" />
