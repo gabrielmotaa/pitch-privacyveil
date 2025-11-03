@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { ChevronLeft, ChevronRight, Shield, Target, TrendingUp, DollarSign, Calendar, Award, CodeXml, Zap, CheckCircle } from 'lucide-react';
 // import css
 import './App.css';
@@ -382,6 +382,24 @@ const PitchDeck = () => {
   const nextSlide = () => setCurrentSlide((prev) => (prev + 1) % slides.length);
   const prevSlide = () => setCurrentSlide((prev) => (prev - 1 + slides.length) % slides.length);
   const currentSlideData = slides[currentSlide];
+
+  // Adiciona navegação por teclado
+  useEffect(() => {
+    const handleKeyDown = (event) => {
+      if (event.key === 'ArrowRight' || event.key === 'ArrowDown') {
+        if (currentSlide < slides.length - 1) {
+          nextSlide();
+        }
+      } else if (event.key === 'ArrowLeft' || event.key === 'ArrowUp') {
+        if (currentSlide > 0) {
+          prevSlide();
+        }
+      }
+    };
+
+    window.addEventListener('keydown', handleKeyDown);
+    return () => window.removeEventListener('keydown', handleKeyDown);
+  }, [currentSlide, slides.length]);
 
   return (
     <div className="w-full h-screen bg-gradient-to-br from-gray-50 via-indigo-50 to-purple-50 flex flex-col">
