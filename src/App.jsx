@@ -441,7 +441,7 @@ const PitchDeck = () => {
         <button
           onClick={prevSlide}
           disabled={currentSlide === 0}
-          className="flex items-center space-x-2 px-7 py-3 rounded-xl bg-indigo-600 text-white hover:bg-indigo-700 disabled:bg-gray-300 disabled:cursor-not-allowed transition-colors text-base font-medium"
+          className="cursor-pointer flex items-center space-x-2 px-7 py-3 rounded-xl bg-indigo-600 text-white hover:bg-indigo-700 disabled:bg-gray-300 disabled:cursor-not-allowed transition-colors text-base font-medium"
         >
           <ChevronLeft className="w-5 h-5" />
           <span>Anterior</span>
@@ -452,7 +452,7 @@ const PitchDeck = () => {
             <button
               key={index}
               onClick={() => setCurrentSlide(index)}
-              className={`transition-all duration-300 rounded-full ${
+              className={`cursor-pointer transition-all duration-300 rounded-full ${
                 index === currentSlide ? 'w-8 h-3 bg-indigo-600' : 'w-3 h-3 bg-gray-300'
               }`}
             />
@@ -462,7 +462,7 @@ const PitchDeck = () => {
         <button
           onClick={nextSlide}
           disabled={currentSlide === slides.length - 1}
-          className="flex items-center space-x-2 px-7 py-3 rounded-xl bg-indigo-600 text-white hover:bg-indigo-700 disabled:bg-gray-300 disabled:cursor-not-allowed transition-colors text-base font-medium"
+          className="cursor-pointer flex items-center space-x-2 px-7 py-3 rounded-xl bg-indigo-600 text-white hover:bg-indigo-700 disabled:bg-gray-300 disabled:cursor-not-allowed transition-colors text-base font-medium"
         >
           <span>Próximo</span>
           <ChevronRight className="w-5 h-5" />
